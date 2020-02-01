@@ -30,5 +30,28 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: 'gatsby-plugin-antd',
+      options: {
+        libraryName: "antd",
+        style: true
+      }
+    },
+    {
+      resolve: "gatsby-plugin-less",
+      options: {
+        javascriptEnabled: true,
+        modifyVars: { 
+          '@menu-item-active-bg': 'inherit',
+          '@menu-item-color': '#212f4a',
+          '@input-height-base': '45px',
+          '@carousel-dot-width': '24px',
+          '@carousel-dot-height': '6px',
+          '@carousel-dot-active-width': '32px'
+        },
+      }
+    },
+    `gatsby-plugin-scroll-reveal`,
   ],
 }

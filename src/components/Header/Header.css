@@ -1,0 +1,90 @@
+:root{
+    --heightpadrao: 100px;
+}
+.header {
+    position: fixed;
+    z-index: 5;
+    width: 100%; 
+    background:transparent;
+    padding: 0;
+    color: white;
+    height: var(--heightpadrao);
+    -moz-transition: height .35s ease-in-out , background .35s ease-in-out;
+    -webkit-transition: height .35s ease-in-out , background .35s ease-in-out;
+    -o-transition: height .35s ease-in-out , background .35s ease-in-out;
+    transition: height .35s ease-in-out , background .35s ease-in-out;
+    border-bottom: 1px solid rgba(255, 255, 255,0.3);
+}
+
+.newHeader {
+    color: #212f4a;
+    background: white;
+    height: var(--heightpadrao);
+    -moz-transition: height .35s ease-in-out , background .35s ease-in-out;
+    -webkit-transition: height .35s ease-in-out , background .35s ease-in-out;
+    -o-transition: height .35s ease-in-out , background .35s ease-in-out;
+    transition: height .35s ease-in-out , background .35s ease-in-out;
+    border-bottom: 1px solid rgba(216, 216, 216, 0.7);
+}
+
+.appBarMenu {
+    display: none;
+    line-height: var(--heightpadrao);
+    -moz-transition: line-height .35s ease-in-out;
+    -webkit-transition: line-height .35s ease-in-out;
+    -o-transition: line-height .35s ease-in-out;
+    transition: line-height .35s ease-in-out;
+    float: right;
+    padding-right: 5px;
+    border-bottom: unset;
+    background:transparent;
+    color: unset;
+}
+
+.drawerMenu {
+    border-right: unset;
+}
+
+.drawerMenu li {
+    padding: unset;
+}
+
+.logo {
+    line-height: var(--heightpadrao);
+    -moz-transition: line-height .35s ease-in-out;
+    -webkit-transition: line-height .35s ease-in-out;
+    -o-transition: line-height .35s ease-in-out;
+    transition: line-height .35s ease-in-out;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 25px;
+    font-size: 2rem;
+}
+
+.menuIcon { 
+    float: right; 
+    line-height: var(--heightpadrao); 
+    -moz-transition: line-height .35s ease-in-out;
+    -webkit-transition: line-height .35s ease-in-out;
+    -o-transition: line-height .35s ease-in-out;
+    transition: line-height .35s ease-in-out;
+    padding-right: 25px;
+}
+
+.menuIcon svg { 
+    font-size: 1.5rem;
+}
+
+.menuIcon:hover {
+    color: #1890ff;
+}
+
+@media (min-width: 650px) {
+    .menuIcon {
+        display: none;
+    }
+    .appBarMenu {
+        display: block;
+    }
+}
