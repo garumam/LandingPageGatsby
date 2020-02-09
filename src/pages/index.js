@@ -74,7 +74,7 @@ const IndexPage = () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", windowSizeChange);
     }
-  }, []);
+  }, [menuBg]);
 
   return (
     <Layout style={{ position: 'relative' }}>
